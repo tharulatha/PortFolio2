@@ -1,0 +1,149 @@
+body {
+    margin: auto;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.navbar {
+    display: flex;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: space-between;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.profilerName {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar-headers {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+}
+
+#profile {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageProfile {
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.aboutProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hello {
+    font-size: 13px;
+}
+
+.profileName {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.profilerAbout {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: center
+}
+
+.linkedin {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.github {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#about {
+    
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.aboutMe {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.aboutHead {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.educationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px  solid black;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.education{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.profileImage{
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.aboutMePara{
+    margin:40px 0;
+}
+
+@media screen and (max-width: 720px) {
+    #profile {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+    }
+    #about{
+        padding: 0;
+    }
+}
