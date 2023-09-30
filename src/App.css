@@ -84,7 +84,7 @@ body {
 }
 
 #about {
-    
+
     margin: 0 auto;
     padding: 30px;
 }
@@ -104,54 +104,54 @@ body {
     justify-content: center;
 }
 
-.educationContainer{
+.educationContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px  solid black;
+    border: 2px solid black;
     width: 300px;
     padding: 10px;
     border-radius: 20px;
 }
 
-.education{
+.education {
     object-fit: cover;
     width: 20px;
     height: 20px;
     margin: 10px;
 }
 
-.profileImage{
+.profileImage {
     object-fit: cover;
     width: 350px;
     height: 350px;
     border-radius: 20px;
 }
 
-.aboutMePara{
-    margin:40px 0;
+.aboutMePara {
+    margin: 40px 0;
 }
 
-.experience{
+.experience {
     object-fit: cover;
     width: 20px;
     height: 20px;
-    margin: 10px; 
+    margin: 10px;
 }
 
-.ExpEduc{
+.ExpEduc {
     display: flex;
     gap: 20px;
 }
 
-#experience{
+#experience {
     margin: 0 auto;
     padding: 20px;
 }
 
-.experienceHead{
+.experienceHead {
     font-size: 30px;
     font-weight: 900;
     text-align: center;
@@ -160,7 +160,7 @@ body {
     justify-content: center;
 }
 
-.experienceContainer{
+.experienceContainer {
     display: flex;
     margin: 20px;
     justify-content: space-around;
@@ -168,12 +168,12 @@ body {
     align-items: center;
 }
 
-.couseName{
+.couseName {
     font-size: 15px;
     font-weight: 600;
 }
 
-.couseLogo{
+.couseLogo {
     object-fit: cover;
     width: 50px;
     height: 50px;
@@ -182,27 +182,49 @@ body {
 
 
 @media screen and (max-width: 720px) {
+    .navbar-headers{
+        display: none
+    }
     #profile {
         display: flex;
         flex-direction: column;
     }
-    .aboutMe{
+
+    .aboutMe {
         display: flex;
         flex-direction: column;
     }
-    #about{
+
+    #about {
         padding: 0;
     }
-    .ExpEduc{
+
+    .profileImage {
+        object-fit: cover;
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ExpEduc {
         display: flex;
         flex-direction: column;
     }
-    .experienceContainer{
+
+    .experienceContainer {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .courseContainer{
+
+    .educationContainer{
+        width: 220px;
+    }
+
+    .courseContainer {
         display: flex;
         flex-direction: column;
         text-align: center;
