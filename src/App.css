@@ -28,7 +28,7 @@ body {
     right: -1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     z-index: 2;
     height: fit-content;
     padding: 20px;
