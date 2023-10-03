@@ -7,6 +7,37 @@ body {
     width: 80%;
 }
 
+.mob-nav {
+    display: none;
+}
+
+.active{
+    padding-bottom: 5px;
+    border-bottom: 2px solid grey;
+}
+
+.menubar {
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+
+.mobile-navbar {
+    position: absolute;
+    top: 6rem;
+    right: -10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+    height: fit-content;
+    min-width: 15rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
 .navbar {
     display: flex;
     margin: 0 auto;
@@ -21,6 +52,7 @@ body {
 .profilerName {
     font-size: 1.2rem;
     font-weight: 500;
+    text-shadow: 1px 1px grey;
 }
 
 .navbar-headers {
@@ -110,7 +142,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #000000;
     width: 300px;
     padding: 10px;
     border-radius: 20px;
@@ -144,6 +176,8 @@ body {
 .ExpEduc {
     display: flex;
     gap: 20px;
+    /* width: 300px; */
+
 }
 
 #experience {
@@ -180,11 +214,164 @@ body {
     /* border-radius: 50%; */
 }
 
+#projects {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.projectHead {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.projectImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projectTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.gitLink {
+    background-color: white;
+    padding: 8px 30px;
+    color: #000000;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+
+
+.DemoLink {
+    background-color: white;
+    padding: 8px 30px;
+    color: #000000;
+    border: 2px solid grey;
+    border-radius: 20px;
+
+}
+
+.gitLink a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.DemoLink a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#contact {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contactHead {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    margin: 30px;
+}
+
+.contactIcon {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    color: rgb(108, 104, 104);
+}
 
 @media screen and (max-width: 720px) {
-    .navbar-headers{
+    .navbar-headers {
         display: none
     }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mob-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profilerName{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
     #profile {
         display: flex;
         flex-direction: column;
@@ -220,9 +407,13 @@ body {
         gap: 20px;
     }
 
-    .educationContainer{
+    .educationContainer {
         width: 265px;
         align-items: center;
+    }
+
+    .aboutMePara {
+        text-align: justify;
     }
 
     .courseContainer {
@@ -231,5 +422,21 @@ body {
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
+
+    .projectsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 11px;
     }
 }
