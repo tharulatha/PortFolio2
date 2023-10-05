@@ -40,7 +40,7 @@ body {
 .navbar {
     display: flex;
     margin: 0 auto;
-    padding: 30px 50px;
+    padding: 30px;
     justify-content: space-between;
     z-index: 3;
     position: sticky;
@@ -116,9 +116,8 @@ body {
 }
 
 #about {
-
     margin: 0 auto;
-    padding: 30px 70px;
+    padding: 10px 40px;
 }
 
 .aboutMe {
@@ -136,17 +135,30 @@ body {
     justify-content: center;
 }
 
-.educationContainer {
+.educationContainer1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 300px;
-    padding: 10px;
+    /* max-width: 300px; */
+    padding: 20px 60px;
     border-radius: 20px;
 }
+
+.educationContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #000000;
+    /* max-width: 300px; */
+    padding: 20px 100px;
+    border-radius: 20px;
+}
+
 
 .education {
     object-fit: cover;
@@ -159,6 +171,7 @@ body {
     object-fit: cover;
     width: 350px;
     height: 350px;
+    width: fit-content;
     border-radius: 20px;
 }
 
@@ -387,13 +400,13 @@ body {
     }
 
     #about {
-        padding: 10px 45px;
+        padding: 20px 40px;
     }
 
     .profileImage {
         object-fit: cover;
-        width: 285px;
-        height: 285px;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         border-radius: 20px;
         display: flex;
         justify-content: center;
@@ -411,8 +424,15 @@ body {
         gap: 20px;
     }
 
-    .educationContainer {
-        width: 265px;
+    .educationContainer1 {
+        /* width: 265px; */
+        padding: 20px;
+        align-items: center;
+    }
+
+    .educationContainer2 {
+        /* width: 265px; */
+        padding: 20px;
         align-items: center;
     }
 

@@ -12,13 +12,13 @@ const About = () => {
         </div>
         <div className="aboutMeContainer">
           <div className="ExpEduc">
-          <div className="educationContainer">
+          <div className="educationContainer1">
             <img src={user} alt="education" className="education" />
             <span>Education</span>
             <br />
             <span>Bca. Bachelors Degree</span>
           </div>
-          <div className="educationContainer">
+          <div className="educationContainer2">
             <img src={experience} alt="experience" className="experience" />
             <span>Experience</span>
             <br />
