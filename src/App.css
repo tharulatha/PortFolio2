@@ -47,6 +47,7 @@ body {
     top: 0;
     background-color: white;
     cursor: pointer;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .profilerName {
@@ -380,6 +381,7 @@ body {
     .navbar {
         display: flex;
         justify-content: space-between;
+        padding: 10px;
     }
 
     .mob-nav {
