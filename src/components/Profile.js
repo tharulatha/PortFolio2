@@ -14,8 +14,8 @@ const Profile = () => {
                 <span className="profilerAbout">Frontend Developer</span>
                 </div>
                 <div className="contactLinks">
-                    <img src={linkedin} alt='linkedin' className='linkedin' />
-                  <img src={github}  alt='github' className='github'/>
+                   <a href='https://www.linkedin.com/in/tharulatha-b-165897242' target='blank'> <img src={linkedin} alt='linkedin' className='linkedin' /></a>
+                  <a href='https://github.com/tharulatha' target='blank'><img src={github}  alt='github' className='github'/></a>
                     
                 </div>
             </div>
